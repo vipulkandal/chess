@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -6,10 +5,10 @@ import Landing from './Screens/Landing';
 import Game from './Screens/Game';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='h-dvh bg-[#312e2b]'>
+
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} /> 
@@ -17,7 +16,7 @@ function App() {
       </Routes>
     </BrowserRouter>
 
-    </>
+    </div>
   )
 }
 
